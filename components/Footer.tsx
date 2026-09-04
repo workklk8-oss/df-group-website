@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation";
 import logo from "@/public/logo.png";
 import { langFromPath, localePath, ui } from "@/lib/i18n";
 import siteEn from "@/content/site.json";
-import siteZh from "@/content/zh/site.json";
+import siteZh from "@/content/cn/site.json";
 
 export default function Footer() {
   const lang = langFromPath(usePathname() || "/");

@@ -1,24 +1,34 @@
 export type Lang = "en" | "zh";
 
+/**
+ * URL segment for the Chinese pages. The language *code* stays "zh" (that is
+ * the correct value for <html lang> and hreflang); only the visible URL uses
+ * "cn" because it reads better for the audience.
+ */
+export const ZH_PREFIX = "/cn";
+
 /** Prefix a path for the given language. English lives at the root. */
 export function localePath(lang: Lang, path: string): string {
   const clean = path === "/" ? "" : path;
-  return lang === "zh" ? `/zh${clean}` || "/zh" : path || "/";
+  return lang === "zh" ? `${ZH_PREFIX}${clean}` || ZH_PREFIX : path || "/";
 }
 
 /** Given the current pathname, return the equivalent page in the other language. */
 export function switchPath(pathname: string): { lang: Lang; href: string } {
   const p = pathname.replace(/\/$/, "") || "/";
-  if (p === "/zh" || p.startsWith("/zh/")) {
-    const rest = p.slice(3) || "/";
+  if (p === ZH_PREFIX || p.startsWith(`${ZH_PREFIX}/`)) {
+    const rest = p.slice(ZH_PREFIX.length) || "/";
     return { lang: "en", href: rest };
   }
-  return { lang: "zh", href: `/zh${p === "/" ? "" : p}` || "/zh" };
+  return {
+    lang: "zh",
+    href: `${ZH_PREFIX}${p === "/" ? "" : p}` || ZH_PREFIX,
+  };
 }
 
 export function langFromPath(pathname: string): Lang {
   const p = pathname.replace(/\/$/, "");
-  return p === "/zh" || p.startsWith("/zh/") ? "zh" : "en";
+  return p === ZH_PREFIX || p.startsWith(`${ZH_PREFIX}/`) ? "zh" : "en";
 }
 
 /** Interface text that does not live in the editable content files. */

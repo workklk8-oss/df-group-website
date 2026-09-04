@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import GalleryPage from "@/components/pages/GalleryPage";
-import gallery from "@/content/zh/gallery.json";
-import site from "@/content/zh/site.json";
+import gallery from "@/content/cn/gallery.json";
+import site from "@/content/cn/site.json";
 
 export const metadata: Metadata = {
   title: "圖庫 — DF Group",

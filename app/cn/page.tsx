@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import HomePage from "@/components/pages/HomePage";
-import home from "@/content/zh/home.json";
-import partners from "@/content/zh/partners.json";
+import home from "@/content/cn/home.json";
+import partners from "@/content/cn/partners.json";
 
 export const metadata: Metadata = {
   title: "DF Group · 香港",

@@ -250,7 +250,7 @@ content:
   - name: home_zh
     label: Home page (中文)
     type: file
-    path: content/zh/home.json
+    path: content/cn/home.json
     fields:
       - name: hero
         label: Hero (top of the page)
@@ -334,7 +334,7 @@ content:
   - name: partners_zh
     label: Partner logos (中文)
     type: file
-    path: content/zh/partners.json
+    path: content/cn/partners.json
     fields:
       - name: logos
         label: Logos
@@ -350,7 +350,7 @@ content:
   - name: gallery_zh
     label: Gallery photos (中文)
     type: file
-    path: content/zh/gallery.json
+    path: content/cn/gallery.json
     fields:
       - name: photos
         label: Photos
@@ -366,7 +366,7 @@ content:
   - name: team_zh
     label: Team (中文)
     type: file
-    path: content/zh/team.json
+    path: content/cn/team.json
     fields:
       - name: leadership
         label: Leadership
@@ -396,7 +396,7 @@ content:
   - name: news_zh
     label: News (中文)
     type: file
-    path: content/zh/news.json
+    path: content/cn/news.json
     fields:
       - name: entries
         label: News entries
@@ -413,7 +413,7 @@ content:
   - name: contact_zh
     label: Contact page (中文)
     type: file
-    path: content/zh/contact.json
+    path: content/cn/contact.json
     fields:
       - { name: eyebrow, label: Small heading, type: string }
       - { name: heading, label: Page heading, type: string }
@@ -440,7 +440,7 @@ content:
   - name: site_zh
     label: Other pages & footer (中文)
     type: file
-    path: content/zh/site.json
+    path: content/cn/site.json
     fields:
       - { name: footerBlurb, label: Footer description, type: text }
       - { name: footerCopyright, label: Footer copyright line, type: string }

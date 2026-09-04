@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import ContactPage from "@/components/pages/ContactPage";
-import contact from "@/content/zh/contact.json";
+import contact from "@/content/cn/contact.json";
 
 export const metadata: Metadata = {
   title: "聯絡我們 — DF Group",

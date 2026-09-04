@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import TeamPage from "@/components/pages/TeamPage";
-import team from "@/content/zh/team.json";
-import site from "@/content/zh/site.json";
+import team from "@/content/cn/team.json";
+import site from "@/content/cn/site.json";
 
 export const metadata: Metadata = {
   title: "團隊 — DF Group",

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import NewsPage from "@/components/pages/NewsPage";
-import news from "@/content/zh/news.json";
-import site from "@/content/zh/site.json";
+import news from "@/content/cn/news.json";
+import site from "@/content/cn/site.json";
 
 export const metadata: Metadata = {
   title: "動態 — DF Group",

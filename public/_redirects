@@ -1,0 +1,3 @@
+# The Chinese pages moved from /zh to /cn. Keep old links working.
+/zh              /cn           301
+/zh/*            /cn/:splat    301

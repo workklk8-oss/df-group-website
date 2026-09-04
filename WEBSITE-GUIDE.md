@@ -123,7 +123,7 @@ The website exists in **English and Traditional Chinese**. Visitors switch with
 the **EN / 中文** link in the top corner.
 
 - English pages are at `diligentfaith.com`
-- Chinese pages are at `diligentfaith.com/zh`
+- Chinese pages are at `diligentfaith.com/cn`
 
 In the editor every section appears **twice**: once marked **(English)** and
 once marked **(中文)**. They are separate — editing the English text does not
