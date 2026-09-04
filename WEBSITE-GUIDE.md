@@ -119,7 +119,7 @@ the "I'm reaching out about" dropdown.
 The wording on the Team, News and Gallery page headers, plus the footer text.
 
 ### The Chinese version
-The website exists in **English and Traditional Chinese**. Visitors switch with
+The website exists in **English and Simplified Chinese**. Visitors switch with
 the **EN / 中文** link in the top corner.
 
 - English pages are at `diligentfaith.com`

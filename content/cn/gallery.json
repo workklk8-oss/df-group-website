@@ -1,76 +1,22 @@
 {
   "photos": [
-    {
-      "image": "/gallery/photo-06.jpg",
-      "caption": "INSEAD 亞洲校區（新加坡）——匯聚創辦人、投資者與營運者"
-    },
-    {
-      "image": "/gallery/photo-04.jpg",
-      "caption": "海洋創新平台，聯同摩納哥阿爾貝二世親王基金會及可持續金融倡議，香港遊艇會"
-    },
-    {
-      "image": "/gallery/photo-09.jpg",
-      "caption": "第三屆「香港世界青年科學大會」，與北京大學香港校友會同行"
-    },
-    {
-      "image": "/gallery/photo-11.jpg",
-      "caption": "香港總商會考察團"
-    },
-    {
-      "image": "/gallery/photo-07.jpg",
-      "caption": "北京大學香港校友會——2026 論壇暨理監事就職典禮"
-    },
-    {
-      "image": "/gallery/photo-10.jpg",
-      "caption": "粵港澳大灣區產業與資本對接會，香港"
-    },
-    {
-      "image": "/gallery/photo-08.jpg",
-      "caption": "2025 北京大學全球金融論壇（新加坡）"
-    },
-    {
-      "image": "/gallery/photo-02.jpg",
-      "caption": "香港科技大學（廣州）創科嘉年華——大灣區科創投資論壇及中國創新科技出海論壇"
-    },
-    {
-      "image": "/gallery/photo-13.jpg",
-      "caption": "Beta Gamma Sigma 香港科技大學分會——第二十屆會員入會典禮"
-    },
-    {
-      "image": "/gallery/photo-12.jpg",
-      "caption": "Beta Gamma Sigma 香港大學分會入會典禮，港大經管學院"
-    },
-    {
-      "image": "/gallery/photo-18.jpg",
-      "caption": "可持續金融倡議——新加坡巡迴路演"
-    },
-    {
-      "image": "/gallery/photo-05.png",
-      "caption": "INSEAD 校友創業俱樂部（新加坡）——頒獎典禮"
-    },
-    {
-      "image": "/gallery/photo-15.jpg",
-      "caption": "投資可持續的未來：資本、政策與環境的交匯——INSEAD 亞洲校區地球週"
-    },
-    {
-      "image": "/gallery/photo-14.jpg",
-      "caption": "香港特許金融分析師學會——講者座談"
-    },
-    {
-      "image": "/gallery/photo-16.jpg",
-      "caption": "深圳特許金融分析師學會週年晚宴"
-    },
-    {
-      "image": "/gallery/photo-17.jpg",
-      "caption": "清華大學學生創業協會——年度可持續發展峰會"
-    },
-    {
-      "image": "/gallery/photo-03.png",
-      "caption": "DF Group 參與 TEDxHongKong——連結亞洲，連結世界"
-    },
-    {
-      "image": "/gallery/photo-01.png",
-      "caption": "香港財富管理高峰論壇支持機構之一"
-    }
+    { "image": "/gallery/photo-06.jpg", "caption": "INSEAD 亚洲校区（新加坡）——汇聚创办人、投资者与营运者" },
+    { "image": "/gallery/photo-04.jpg", "caption": "海洋创新平台，联同摩纳哥阿尔贝二世亲王基金会及可持续金融倡议，香港游艇会" },
+    { "image": "/gallery/photo-09.jpg", "caption": "第三届「香港世界青年科学大会」，与北京大学香港校友会同行" },
+    { "image": "/gallery/photo-11.jpg", "caption": "香港总商会考察团" },
+    { "image": "/gallery/photo-07.jpg", "caption": "北京大学香港校友会——2026 论坛暨理监事就职典礼" },
+    { "image": "/gallery/photo-10.jpg", "caption": "粤港澳大湾区产业与资本对接会，香港" },
+    { "image": "/gallery/photo-08.jpg", "caption": "2025 北京大学全球金融论坛（新加坡）" },
+    { "image": "/gallery/photo-02.jpg", "caption": "香港科技大学（广州）创科嘉年华——大湾区科创投资论坛及中国创新科技出海论坛" },
+    { "image": "/gallery/photo-13.jpg", "caption": "Beta Gamma Sigma 香港科技大学分会——第二十届会员入会典礼" },
+    { "image": "/gallery/photo-12.jpg", "caption": "Beta Gamma Sigma 香港大学分会入会典礼，港大经管学院" },
+    { "image": "/gallery/photo-18.jpg", "caption": "可持续金融倡议——新加坡巡回路演" },
+    { "image": "/gallery/photo-05.png", "caption": "INSEAD 校友创业俱乐部（新加坡）——颁奖典礼" },
+    { "image": "/gallery/photo-15.jpg", "caption": "投资可持续的未来：资本、政策与环境的交汇——INSEAD 亚洲校区地球周" },
+    { "image": "/gallery/photo-14.jpg", "caption": "香港特许金融分析师学会——讲者座谈" },
+    { "image": "/gallery/photo-16.jpg", "caption": "深圳特许金融分析师学会周年晚宴" },
+    { "image": "/gallery/photo-17.jpg", "caption": "清华大学学生创业协会——年度可持续发展峰会" },
+    { "image": "/gallery/photo-03.png", "caption": "DF Group 参与 TEDxHongKong——连结亚洲，连结世界" },
+    { "image": "/gallery/photo-01.png", "caption": "香港财富管理高峰论坛支持机构之一" }
   ]
 }

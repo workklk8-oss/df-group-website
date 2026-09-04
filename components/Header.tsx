@@ -53,7 +53,7 @@ export default function Header() {
 
   // Keep <html lang> correct for screen readers and search engines.
   useEffect(() => {
-    document.documentElement.lang = lang === "zh" ? "zh-Hant" : "en";
+    document.documentElement.lang = lang === "zh" ? "zh-Hans" : "en";
   }, [lang]);
 
   const isActive = (href: string) => normalize(href) === pathname;

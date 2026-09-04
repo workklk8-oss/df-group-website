@@ -574,13 +574,35 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   .on-ink .nav__lang { color: var(--ivory); }
 }
 
-/* Chinese text sits better with slightly looser leading and no italic faux-styling */
-:root[lang^="zh"] .display,
+/* ------------------------------------------------------------------
+   CHINESE TYPOGRAPHY
+   CJK glyphs are taller than Latin ones, so the tight display leading
+   clips them. The gradient shimmer on the highlighted word also clips,
+   because background-clip:text is bounded by the inline box — so for
+   Chinese we drop the gradient and use a solid brass instead.
+   ------------------------------------------------------------------ */
+.display[lang^="zh"],
+:root[lang^="zh"] .display {
+  line-height: 1.32;
+  letter-spacing: 0;
+  padding-block: 0.06em;
+}
+.hero h1[lang^="zh"] em,
+:root[lang^="zh"] .hero h1 em {
+  background: none;
+  -webkit-background-clip: border-box;
+  background-clip: border-box;
+  -webkit-text-fill-color: currentColor;
+  color: var(--brass-soft);
+  animation: none;
+  font-style: normal;
+}
 :root[lang^="zh"] .h2,
-:root[lang^="zh"] .statement { line-height: 1.25; letter-spacing: 0; }
-:root[lang^="zh"] .hero h1 em,
+:root[lang^="zh"] .statement { line-height: 1.35; letter-spacing: 0; }
 :root[lang^="zh"] .statement em { font-style: normal; }
 :root[lang^="zh"] .eyebrow,
 :root[lang^="zh"] .stat__l,
 :root[lang^="zh"] .person__role,
 :root[lang^="zh"] .entry__meta { letter-spacing: 0.08em; }
+:root[lang^="zh"] .lede,
+:root[lang^="zh"] .prose p { line-height: 1.75; }

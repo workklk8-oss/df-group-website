@@ -74,7 +74,11 @@ export default function Hero({
           {hero.eyebrow}
         </motion.p>
 
-        <motion.h1 className="display" {...rise(0.15)}>
+        <motion.h1
+          className="display"
+          lang={lang === "zh" ? "zh-Hans" : undefined}
+          {...rise(0.15)}
+        >
           {withEmphasis(hero.heading)}
         </motion.h1>
 

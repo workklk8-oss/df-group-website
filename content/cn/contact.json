@@ -1,23 +1,23 @@
 {
-  "eyebrow": "聯絡我們",
-  "heading": "讓我們展開對話。",
-  "lede": "無論您正在募集資金、探索交易機會，或希望加入我們的網絡——我們都樂意聆聽。",
+  "eyebrow": "联系我们",
+  "heading": "让我们展开对话。",
+  "lede": "无论您正在募集资金、探索交易机会，或希望加入我们的网络——我们都乐意聆听。",
   "details": [
-    { "label": "辦公室", "value": "香港 · 新加坡 · 杜拜 · 巴黎 · 倫敦 · 深圳", "link": "" },
+    { "label": "办公室", "value": "香港 · 新加坡 · 迪拜 · 巴黎 · 伦敦 · 深圳", "link": "" },
     {
-      "label": "領英",
+      "label": "领英",
       "value": "DF Group · Diligent Faith",
       "link": "https://www.linkedin.com/company/df-group-diligentfaith/"
     },
-    { "label": "網站", "value": "diligentfaith.com", "link": "https://diligentfaith.com" }
+    { "label": "网站", "value": "diligentfaith.com", "link": "https://diligentfaith.com" }
   ],
-  "formNote": "我們通常會在數個工作天內回覆。",
+  "formNote": "我们通常会在数个工作日内回复。",
   "topics": [
-    { "label": "募集資金／投資" },
-    { "label": "潛在交易（併購）" },
-    { "label": "顧問與策略" },
-    { "label": "加入顧問網絡" },
-    { "label": "媒體、活動或採訪" },
-    { "label": "其他事項" }
+    { "label": "募集资金／投资" },
+    { "label": "潜在交易（并购）" },
+    { "label": "顾问与策略" },
+    { "label": "加入顾问网络" },
+    { "label": "媒体、活动或采访" },
+    { "label": "其他事项" }
   ]
 }
