@@ -10,7 +10,16 @@ import {
 import Counter from "./Counter";
 import MagneticButton from "./MagneticButton";
 import { withEmphasis } from "@/lib/emphasis";
-import home from "@/content/home.json";
+import { localePath, type Lang } from "@/lib/i18n";
+
+type HeroContent = {
+  eyebrow: string;
+  heading: string;
+  lede: string;
+  primaryLabel: string;
+  secondaryLabel: string;
+};
+type Stat = { value: string; label: string };
 
 /** "100+" -> counts up to 100 then shows "+". Non-numeric values render as-is. */
 function StatValue({ value }: { value: string }) {
@@ -19,14 +28,20 @@ function StatValue({ value }: { value: string }) {
   return <Counter value={parseInt(m[1], 10)} suffix={m[2]} />;
 }
 
-export default function Hero() {
+export default function Hero({
+  lang,
+  hero,
+  stats,
+}: {
+  lang: Lang;
+  hero: HeroContent;
+  stats: readonly Stat[];
+}) {
   const reduce = useReducedMotion();
   const { scrollY } = useScroll();
   // Subtle parallax drift on the atmospheric brass wash + skyline.
   const washY = useTransform(scrollY, [0, 600], [0, 120]);
   const skyY = useTransform(scrollY, [0, 600], [0, 70]);
-
-  const { hero, stats } = home;
 
   const rise = (delay: number) =>
     reduce
@@ -71,7 +86,7 @@ export default function Hero() {
           <MagneticButton href="#practice" className="btn btn--solid">
             {hero.primaryLabel} <span className="btn__arrow">→</span>
           </MagneticButton>
-          <Link className="txtlink" href="/contact">
+          <Link className="txtlink" href={localePath(lang, "/contact")}>
             {hero.secondaryLabel}
           </Link>
         </motion.div>

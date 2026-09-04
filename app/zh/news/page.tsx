@@ -1,12 +1,11 @@
 import type { Metadata } from "next";
 import NewsPage from "@/components/pages/NewsPage";
-import news from "@/content/news.json";
-import site from "@/content/site.json";
+import news from "@/content/zh/news.json";
+import site from "@/content/zh/site.json";
 
 export const metadata: Metadata = {
-  title: "News — DF Group",
-  description:
-    "Announcements, appointments, and moments from across the DF Group network.",
+  title: "動態 — DF Group",
+  description: "來自 DF Group 網絡的公告、任命與精彩時刻。",
 };
 
 export default function Page() {

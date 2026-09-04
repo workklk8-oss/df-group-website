@@ -3,14 +3,17 @@
 // code. Pure-CSS infinite marquee (see globals.css); pauses on hover, brightens
 // the hovered logo, and stops entirely for reduced-motion visitors.
 
-import partners from "@/content/partners.json";
+
+type Logo = { name: string; image: string };
 
 export default function TrustedBy({
   eyebrow = "Trusted by founders & partners",
+  logos: input,
 }: {
   eyebrow?: string;
+  logos: readonly Logo[];
 }) {
-  const logos = partners.logos.filter((l) => l.image);
+  const logos = input.filter((l) => l.image);
   if (logos.length === 0) return null;
 
   // Rendered twice so the CSS translateX(-50%) loops seamlessly.

@@ -1,0 +1,31 @@
+{
+  "footerBlurb": "勤於思，誠於心。",
+  "footerCopyright": "© 2026 DF Group · Diligent Faith 版權所有。",
+  "footerLocation": "香港特別行政區",
+  "teamPage": {
+    "eyebrow": "團隊成員",
+    "heading": "我們憑判斷力，而非人數。",
+    "lede": "領導層具備數十年銀行與金融經驗，並由各領域的顧問與研究員支持。",
+    "leadershipEyebrow": "01 — 領導層",
+    "leadershipHeading": "方向與監督",
+    "analystsEyebrow": "02 — 投資團隊",
+    "analystsHeading": "行業覆蓋",
+    "analystsLede": "分析師專注於我們發掘、審視並支持企業的各個行業。",
+    "ctaEyebrow": "與我們合作",
+    "ctaHeading": "正在建立值得支持的事業？",
+    "ctaText": "我們持續與創辦人、營運者及共同投資者交流。如果您的項目屬於我們關注的領域，或是我們應該留意的方向，歡迎與我們聯絡。",
+    "ctaLabel": "聯絡我們"
+  },
+  "newsPage": {
+    "eyebrow": "公司動態",
+    "heading": "公告與動態。觀點與報告。",
+    "lede": "來自 DF Group 網絡的公告、任命與精彩時刻。",
+    "buttonLabel": "在 LinkedIn 追蹤 DF Group",
+    "buttonLink": "https://www.linkedin.com/company/df-group-diligentfaith/"
+  },
+  "galleryPage": {
+    "eyebrow": "圖庫",
+    "heading": "網絡中的精彩時刻。",
+    "lede": "來自 DF Group 各地的活動、聚會與里程碑。"
+  }
+}

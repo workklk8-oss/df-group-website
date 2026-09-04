@@ -550,3 +550,37 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .gallery__caption {
   margin: 10px 0 0; font-size: 0.9rem; color: var(--stone); line-height: 1.45;
 }
+
+/* ============================================================
+   LANGUAGE SWITCH (EN / 中文)
+   ============================================================ */
+.nav__end { display: flex; align-items: center; gap: 18px; }
+.nav__lang {
+  font-family: var(--f-mono); font-size: 12px; letter-spacing: 0.1em;
+  color: var(--ink); padding: 6px 2px; border-bottom: 1px solid transparent;
+  transition: color .2s ease, border-color .2s ease; white-space: nowrap;
+}
+.nav__lang::after { display: none; }
+.nav__lang:hover { color: var(--brass); border-bottom-color: var(--brass); }
+.on-ink .nav__lang { color: var(--ivory-dim); }
+.on-ink .nav__lang:hover { color: var(--ivory); border-bottom-color: var(--brass); }
+
+@media (max-width: 860px) {
+  .nav__end { flex-direction: column; align-items: flex-start; gap: 0; width: 100%; }
+  .nav__lang {
+    color: var(--ivory); font-family: var(--f-display); font-size: 1.6rem;
+    padding-block: 10px; letter-spacing: 0;
+  }
+  .on-ink .nav__lang { color: var(--ivory); }
+}
+
+/* Chinese text sits better with slightly looser leading and no italic faux-styling */
+:root[lang^="zh"] .display,
+:root[lang^="zh"] .h2,
+:root[lang^="zh"] .statement { line-height: 1.25; letter-spacing: 0; }
+:root[lang^="zh"] .hero h1 em,
+:root[lang^="zh"] .statement em { font-style: normal; }
+:root[lang^="zh"] .eyebrow,
+:root[lang^="zh"] .stat__l,
+:root[lang^="zh"] .person__role,
+:root[lang^="zh"] .entry__meta { letter-spacing: 0.08em; }

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { ui, type Lang } from "@/lib/i18n";
 
 const FORM_NAME = "contact";
 
@@ -18,12 +19,15 @@ function encode(data: Record<string, string>) {
  * machine.
  */
 export default function ContactForm({
+  lang,
   topics,
   note,
 }: {
+  lang: Lang;
   topics: string[];
   note: string;
 }) {
+  const s = ui[lang].form;
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [topic, setTopic] = useState(topics[0] ?? "");
@@ -58,13 +62,12 @@ export default function ContactForm({
   if (status === "sent") {
     return (
       <div className="form-sent" role="status">
-        <p className="eyebrow eyebrow--dim">Message sent</p>
+        <p className="eyebrow eyebrow--dim">{s.sentEyebrow}</p>
         <p className="statement" style={{ marginTop: 16, maxWidth: "20ch" }}>
-          Thank you — we&rsquo;ll be in touch.
+          {s.sentHeading}
         </p>
         <p className="form__note" style={{ marginTop: 18 }}>
-          We&rsquo;ve received your message and will reply to{" "}
-          <strong>{email || "the address you provided"}</strong> shortly.
+          {s.sentBody} <strong>{email || s.sentFallback}</strong>{s.shortly}
         </p>
       </div>
     );
@@ -89,12 +92,12 @@ export default function ContactForm({
       </p>
 
       <div className="field">
-        <label htmlFor="cf-name">Name</label>
+        <label htmlFor="cf-name">{s.name}</label>
         <input
           id="cf-name"
           name="name"
           type="text"
-          placeholder="Your name"
+          placeholder={s.namePlaceholder}
           autoComplete="name"
           required
           value={name}
@@ -102,12 +105,12 @@ export default function ContactForm({
         />
       </div>
       <div className="field">
-        <label htmlFor="cf-email">Email</label>
+        <label htmlFor="cf-email">{s.email}</label>
         <input
           id="cf-email"
           name="email"
           type="email"
-          placeholder="you@company.com"
+          placeholder={s.emailPlaceholder}
           autoComplete="email"
           required
           value={email}
@@ -115,7 +118,7 @@ export default function ContactForm({
         />
       </div>
       <div className="field">
-        <label htmlFor="cf-topic">I&rsquo;m reaching out about</label>
+        <label htmlFor="cf-topic">{s.topic}</label>
         <select
           id="cf-topic"
           name="topic"
@@ -128,11 +131,11 @@ export default function ContactForm({
         </select>
       </div>
       <div className="field">
-        <label htmlFor="cf-msg">Message</label>
+        <label htmlFor="cf-msg">{s.message}</label>
         <textarea
           id="cf-msg"
           name="message"
-          placeholder="A few lines about what you&rsquo;re working on."
+          placeholder={s.messagePlaceholder}
           required
           value={message}
           onChange={(e) => setMessage(e.target.value)}
@@ -145,14 +148,14 @@ export default function ContactForm({
           className="btn btn--dark"
           disabled={status === "sending"}
         >
-          {status === "sending" ? "Sending…" : "Send message"}{" "}
+          {status === "sending" ? s.sending : s.send}{" "}
           <span className="btn__arrow">→</span>
         </button>
       </div>
 
       {status === "error" && (
         <p className="form__note form__note--error" role="alert">
-          Sorry — something went wrong sending that. Please email us directly at{" "}
+          {s.error}{" "}
           <a href="mailto:admin@diligentfaith.com">admin@diligentfaith.com</a>.
         </p>
       )}

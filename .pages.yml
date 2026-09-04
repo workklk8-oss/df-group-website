@@ -13,7 +13,7 @@ media:
 content:
   # ------------------------------------------------------------------ HOME
   - name: home
-    label: Home page
+    label: Home page (English)
     type: file
     path: content/home.json
     fields:
@@ -97,7 +97,7 @@ content:
 
   # -------------------------------------------------------------- PARTNERS
   - name: partners
-    label: Partner logos (moving strip)
+    label: Partner logos (English)
     type: file
     path: content/partners.json
     fields:
@@ -113,7 +113,7 @@ content:
 
   # ------------------------------------------------------------------- GALLERY
   - name: gallery
-    label: Gallery photos
+    label: Gallery photos (English)
     type: file
     path: content/gallery.json
     fields:
@@ -129,7 +129,7 @@ content:
 
   # ------------------------------------------------------------------ TEAM
   - name: team
-    label: Team
+    label: Team (English)
     type: file
     path: content/team.json
     fields:
@@ -159,7 +159,7 @@ content:
 
   # ------------------------------------------------------------------ NEWS
   - name: news
-    label: News
+    label: News (English)
     type: file
     path: content/news.json
     fields:
@@ -176,7 +176,7 @@ content:
 
   # --------------------------------------------------------------- CONTACT
   - name: contact
-    label: Contact page
+    label: Contact page (English)
     type: file
     path: content/contact.json
     fields:
@@ -203,9 +203,244 @@ content:
 
   # ------------------------------------------- OTHER PAGES / SITE-WIDE BITS
   - name: site
-    label: Other pages & footer
+    label: Other pages & footer (English)
     type: file
     path: content/site.json
+    fields:
+      - { name: footerBlurb, label: Footer description, type: text }
+      - { name: footerCopyright, label: Footer copyright line, type: string }
+      - { name: footerLocation, label: Footer location, type: string }
+
+      - name: teamPage
+        label: Team page wording
+        type: object
+        fields:
+          - { name: eyebrow, label: Small heading, type: string }
+          - { name: heading, label: Page heading, type: string }
+          - { name: lede, label: Intro paragraph, type: text }
+          - { name: leadershipEyebrow, label: Leadership — small heading, type: string }
+          - { name: leadershipHeading, label: Leadership — heading, type: string }
+          - { name: analystsEyebrow, label: Analysts — small heading, type: string }
+          - { name: analystsHeading, label: Analysts — heading, type: string }
+          - { name: analystsLede, label: Analysts — intro, type: text }
+          - { name: ctaEyebrow, label: Closing — small heading, type: string }
+          - { name: ctaHeading, label: Closing — heading, type: string }
+          - { name: ctaText, label: Closing — text, type: text }
+          - { name: ctaLabel, label: Closing — link text, type: string }
+
+      - name: newsPage
+        label: News page wording
+        type: object
+        fields:
+          - { name: eyebrow, label: Small heading, type: string }
+          - { name: heading, label: Page heading, type: string }
+          - { name: lede, label: Intro paragraph, type: text }
+          - { name: buttonLabel, label: Button text, type: string }
+          - { name: buttonLink, label: Button link, type: string }
+
+      - name: galleryPage
+        label: Gallery page wording
+        type: object
+        fields:
+          - { name: eyebrow, label: Small heading, type: string }
+          - { name: heading, label: Page heading, type: string }
+          - { name: lede, label: Intro paragraph, type: text }
+
+  # ============================== CHINESE / 中文 ==============================
+  - name: home_zh
+    label: Home page (中文)
+    type: file
+    path: content/zh/home.json
+    fields:
+      - name: hero
+        label: Hero (top of the page)
+        type: object
+        fields:
+          - { name: eyebrow, label: Small line above the headline, type: string }
+          - name: heading
+            label: Headline — use [brackets] for the italic words
+            type: text
+          - { name: lede, label: Intro paragraph, type: text }
+          - { name: primaryLabel, label: Main button text, type: string }
+          - { name: secondaryLabel, label: Secondary link text, type: string }
+
+      - name: stats
+        label: Three figures under the hero
+        type: object
+        list: true
+        fields:
+          - name: value
+            label: Figure (a number like 100+ will count up)
+            type: string
+          - { name: label, label: Caption, type: string }
+
+      - name: trustedByEyebrow
+        label: Heading above the partner logo strip
+        type: string
+
+      - name: intro
+        label: "Section: Who we are"
+        type: object
+        fields:
+          - { name: eyebrow, label: Small heading, type: string }
+          - name: statement
+            label: Large statement — use [brackets] for italic words
+            type: text
+          - name: paragraphs
+            label: Paragraphs
+            type: string
+            list: true
+
+      - name: practices
+        label: "Section: What we do"
+        type: object
+        fields:
+          - { name: eyebrow, label: Small heading, type: string }
+          - { name: heading, label: Section heading, type: string }
+          - { name: lede, label: Section intro, type: text }
+          - name: items
+            label: Practices
+            type: object
+            list: true
+            fields:
+              - { name: no, label: "Number (e.g. 01)", type: string }
+              - { name: title, label: Title, type: string }
+              - { name: desc, label: Description, type: text }
+
+      - name: approach
+        label: "Section: Our approach"
+        type: object
+        fields:
+          - { name: eyebrow, label: Small heading, type: string }
+          - name: statement
+            label: Large statement — use [brackets] for italic words
+            type: text
+          - name: paragraphs
+            label: Paragraphs
+            type: string
+            list: true
+          - { name: linkLabel, label: Link text, type: string }
+
+      - name: cta
+        label: "Section: Closing call to action"
+        type: object
+        fields:
+          - { name: eyebrow, label: Small heading, type: string }
+          - { name: heading, label: Heading, type: string }
+          - { name: text, label: Text, type: text }
+          - { name: buttonLabel, label: Button text, type: string }
+
+
+  - name: partners_zh
+    label: Partner logos (中文)
+    type: file
+    path: content/zh/partners.json
+    fields:
+      - name: logos
+        label: Logos
+        type: object
+        list: true
+        fields:
+          - { name: name, label: Organisation name, type: string }
+          - name: image
+            label: Logo image
+            type: image
+
+
+  - name: gallery_zh
+    label: Gallery photos (中文)
+    type: file
+    path: content/zh/gallery.json
+    fields:
+      - name: photos
+        label: Photos
+        type: object
+        list: true
+        fields:
+          - name: image
+            label: Photo
+            type: image
+          - { name: caption, label: Caption (optional), type: string }
+
+
+  - name: team_zh
+    label: Team (中文)
+    type: file
+    path: content/zh/team.json
+    fields:
+      - name: leadership
+        label: Leadership
+        type: object
+        list: true
+        fields:
+          - name: photo
+            label: Photo (optional — leave empty to show initials)
+            type: image
+          - { name: mono, label: Initials (used if no photo), type: string }
+          - { name: name, label: Name, type: string }
+          - { name: role, label: Role / title, type: string }
+          - { name: bio, label: Short bio, type: text }
+      - name: analysts
+        label: Investment team (analysts)
+        type: object
+        list: true
+        fields:
+          - name: photo
+            label: Photo (optional — leave empty to show initials)
+            type: image
+          - { name: mono, label: Initials (used if no photo), type: string }
+          - { name: name, label: Name, type: string }
+          - { name: tag, label: Sector focus, type: string }
+
+
+  - name: news_zh
+    label: News (中文)
+    type: file
+    path: content/zh/news.json
+    fields:
+      - name: entries
+        label: News entries
+        type: object
+        list: true
+        fields:
+          - { name: date, label: Date (e.g. Jul 2026), type: string }
+          - { name: cat, label: Category (e.g. Speaking), type: string }
+          - { name: title, label: Headline, type: string }
+          - { name: excerpt, label: Summary, type: text }
+          - { name: href, label: Link (URL), type: string }
+
+
+  - name: contact_zh
+    label: Contact page (中文)
+    type: file
+    path: content/zh/contact.json
+    fields:
+      - { name: eyebrow, label: Small heading, type: string }
+      - { name: heading, label: Page heading, type: string }
+      - { name: lede, label: Intro paragraph, type: text }
+      - name: details
+        label: Contact details
+        type: object
+        list: true
+        fields:
+          - { name: label, label: "Label (e.g. Email)", type: string }
+          - { name: value, label: Text shown, type: string }
+          - name: link
+            label: Link (optional — mailto:… or https://…)
+            type: string
+      - { name: formNote, label: Note under the form, type: text }
+      - name: topics
+        label: Enquiry types in the dropdown
+        type: object
+        list: true
+        fields:
+          - { name: label, label: Option, type: string }
+
+
+  - name: site_zh
+    label: Other pages & footer (中文)
+    type: file
+    path: content/zh/site.json
     fields:
       - { name: footerBlurb, label: Footer description, type: text }
       - { name: footerCopyright, label: Footer copyright line, type: string }

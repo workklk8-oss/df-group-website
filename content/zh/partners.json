@@ -1,0 +1,19 @@
+{
+  "logos": [
+    { "name": "CityU HK Tech 300", "image": "/partners/tech300.png" },
+    { "name": "La French Tech", "image": "/partners/la-french-tech.png" },
+    { "name": "Investors for Climate", "image": "/partners/investors-for-climate.jpeg" },
+    { "name": "Impact Hub", "image": "/partners/impact-hub.png" },
+    { "name": "Handprint", "image": "/partners/handprint.jpeg" },
+    { "name": "Pilot Medical Group", "image": "/partners/pilot-medical.jpeg" },
+    { "name": "Angel School", "image": "/partners/angel-school.jpeg" },
+    { "name": "Loyal", "image": "/partners/loyal.png" },
+    { "name": "Yixu", "image": "/partners/yixu.jpeg" },
+    { "name": "A2D", "image": "/partners/a2d.png" },
+    { "name": "AA", "image": "/partners/aa.png" },
+    { "name": "SustainOpedia", "image": "/partners/partner-2.png" },
+    { "name": "Partner", "image": "/partners/partner-1.png" },
+    { "name": "Partner", "image": "/partners/partner-3.png" },
+    { "name": "Partner", "image": "/partners/partner-4.png" }
+  ]
+}
