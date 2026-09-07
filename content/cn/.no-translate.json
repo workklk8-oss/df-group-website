@@ -1,0 +1,8 @@
+[
+  "site.json .footerBlurb",
+  "home.json .intro.paragraphs[0]",
+  "home.json .intro.paragraphs[1]",
+  "home.json .practices.items[0].desc",
+  "home.json .practices.items[2].desc",
+  "site.json .teamPage.lede"
+]

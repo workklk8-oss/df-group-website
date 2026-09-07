@@ -121,11 +121,16 @@ function syncList(enList, cnList, key, label) {
     (i) => i.no,
     "home/practices"
   );
-  // The three hero figures are positional and always three.
-  cn.stats = en.stats.map((s, i) => ({
-    value: s.value,
-    label: cn.stats?.[i]?.label ?? s.label,
-  }));
+  // Hero figures are positional. Keep any Chinese already written; a purely
+  // numeric value ("100+") is the same in both languages.
+  cn.stats = en.stats.map((s, i) => {
+    const prev = cn.stats?.[i];
+    const numeric = /^[\d\s+%.,-]+$/.test(s.value);
+    return {
+      value: numeric ? s.value : prev?.value ?? s.value,
+      label: prev?.label ?? s.label,
+    };
+  });
   write(CN, "home.json", cn);
 }
 

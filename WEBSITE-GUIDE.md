@@ -134,14 +134,21 @@ member, photo, news item or practice in **English**, the Chinese version is
 updated to match the next time the site builds. Photos, links and dates always
 follow English, so the two pages can never fall out of step.
 
-**The words do not translate themselves.** A newly added item appears on the
-Chinese page showing the English text until someone types the Chinese. So after
-adding something in English, open the matching **(中文)** section and translate
-the new text.
+**The words translate themselves too.** When you change English text, the
+Chinese is re-translated automatically on the next build (using DeepL). You do
+not have to type Chinese at all.
 
-**Editing existing English wording does not change the Chinese.** If you reword
-the homepage in English, update the Chinese homepage too, or the two versions
-will say different things.
+**Two things worth knowing:**
+
+1. **It is machine translation.** Please have a Chinese speaker read anything
+   important before relying on it, especially wording about services.
+2. **Hand-written Chinese is kept** — if you correct the Chinese yourself, your
+   version stays, unless the English for that same text is later changed.
+
+**Protecting wording that must not change.** Some phrases are approved and
+should never be silently re-translated. Those are listed in
+`content/cn/.no-translate.json`, and the translator skips them. A developer can
+add to that list.
 
 ---
 
