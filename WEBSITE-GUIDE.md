@@ -129,22 +129,25 @@ In the editor every section appears **twice**: once marked **(English)** and
 once marked **(中文)**. They are separate — editing the English text does not
 change the Chinese, and vice versa.
 
-**Structure syncs automatically.** If you add, remove, or reorder a team
-member, photo, news item or practice in **English**, the Chinese version is
-updated to match on the next build. Photos, links and dates always follow
-English, so the two pages can never fall out of step.
+**The two versions are separate, and both are edited by hand.** Whatever you
+do in English, do the same in Chinese:
 
-**You type the Chinese yourself.** In the editor each section appears twice —
-once marked **(English)** and once marked **(Chinese)** — with the same fields
-in the same order. Nothing is machine-translated, so the wording is always
-yours.
+| If you... | Do it in |
+|---|---|
+| Add a team member, photo or news item | **both** English and Chinese |
+| Remove one | **both** English and Chinese |
+| Reorder them | **both** |
+| Change wording | **both** |
 
-**After adding something in English**, open the matching Chinese section and
-write the Chinese. A newly added item shows the English text until you do, so
-the page is never blank or broken in the meantime.
+Nothing happens automatically and nothing is machine-translated, so what you
+see in the editor is exactly what is on the website.
 
-**Partner logos are shared.** They are images only, so they appear once (in
-English) and are used on both versions automatically.
+**If you forget one**, the site still works — the two pages will simply show
+different things until someone fixes it. A developer running a build will see a
+reminder listing what is out of step.
+
+**Partner logos are the one exception.** They are images with no wording, so
+there is a single list (under English) used by both versions.
 
 ---
 

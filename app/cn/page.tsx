@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import HomePage from "@/components/pages/HomePage";
 import home from "@/content/cn/home.json";
-import partners from "@/content/cn/partners.json";
+// Partner logos are images only, so both languages share one list.
+import partners from "@/content/partners.json";
 
 export const metadata: Metadata = {
   title: "DF Group · 香港",
