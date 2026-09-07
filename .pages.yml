@@ -246,237 +246,222 @@ content:
           - { name: heading, label: Page heading, type: string }
           - { name: lede, label: Intro paragraph, type: text }
 
-  # ============================== CHINESE / 中文 ==============================
+  # ===================== 中文 CHINESE (edit these by hand) =====================
   - name: home_zh
-    label: Home page (中文)
+    label: 首页 Home page (中文)
     type: file
     path: content/cn/home.json
     fields:
       - name: hero
-        label: Hero (top of the page)
+        label: 首页顶部 Hero
         type: object
         fields:
-          - { name: eyebrow, label: Small line above the headline, type: string }
+          - { name: eyebrow, label: 标题上方小字, type: string }
           - name: heading
-            label: Headline — use [brackets] for the italic words
+            label: 主标题 — 用[方括号]标示要突出的字
             type: text
-          - { name: lede, label: Intro paragraph, type: text }
-          - { name: primaryLabel, label: Main button text, type: string }
-          - { name: secondaryLabel, label: Secondary link text, type: string }
+          - { name: lede, label: 引言段落, type: text }
+          - { name: primaryLabel, label: 主要按钮文字, type: string }
+          - { name: secondaryLabel, label: 次要链接文字, type: string }
 
       - name: stats
-        label: Three figures under the hero
+        label: 首页三项数字
         type: object
         list: true
         fields:
           - name: value
-            label: Figure (a number like 100+ will count up)
+            label: 数字（如 100+ 会跳动）
             type: string
-          - { name: label, label: Caption, type: string }
+          - { name: label, label: 说明文字, type: string }
 
       - name: trustedByEyebrow
-        label: Heading above the partner logo strip
+        label: 合作伙伴标志上方标题
         type: string
 
       - name: intro
-        label: "Section: Who we are"
+        label: "版块：关于我们"
         type: object
         fields:
-          - { name: eyebrow, label: Small heading, type: string }
+          - { name: eyebrow, label: 小标题, type: string }
           - name: statement
-            label: Large statement — use [brackets] for italic words
+            label: 大字标语 — 用[方括号]标示要突出的字
             type: text
           - name: paragraphs
-            label: Paragraphs
+            label: 段落
             type: string
             list: true
 
       - name: practices
-        label: "Section: What we do"
+        label: "版块：业务范畴"
         type: object
         fields:
-          - { name: eyebrow, label: Small heading, type: string }
-          - { name: heading, label: Section heading, type: string }
-          - { name: lede, label: Section intro, type: text }
+          - { name: eyebrow, label: 小标题, type: string }
+          - { name: heading, label: 版块标题, type: string }
+          - { name: lede, label: 版块引言, type: text }
           - name: items
-            label: Practices
+            label: 业务范畴
             type: object
             list: true
             fields:
-              - { name: no, label: "Number (e.g. 01)", type: string }
-              - { name: title, label: Title, type: string }
-              - { name: desc, label: Description, type: text }
+              - { name: no, label: "编号（如 01）", type: string }
+              - { name: title, label: 标题, type: string }
+              - { name: desc, label: 说明, type: text }
 
       - name: approach
-        label: "Section: Our approach"
+        label: "版块：我们的方式"
         type: object
         fields:
-          - { name: eyebrow, label: Small heading, type: string }
+          - { name: eyebrow, label: 小标题, type: string }
           - name: statement
-            label: Large statement — use [brackets] for italic words
+            label: 大字标语 — 用[方括号]标示要突出的字
             type: text
           - name: paragraphs
-            label: Paragraphs
+            label: 段落
             type: string
             list: true
-          - { name: linkLabel, label: Link text, type: string }
+          - { name: linkLabel, label: 链接文字, type: string }
 
       - name: cta
-        label: "Section: Closing call to action"
+        label: "版块：结尾行动号召"
         type: object
         fields:
-          - { name: eyebrow, label: Small heading, type: string }
-          - { name: heading, label: Heading, type: string }
-          - { name: text, label: Text, type: text }
-          - { name: buttonLabel, label: Button text, type: string }
+          - { name: eyebrow, label: 小标题, type: string }
+          - { name: heading, label: 标题, type: string }
+          - { name: text, label: 文字, type: text }
+          - { name: buttonLabel, label: 按钮文字, type: string }
 
-
-  - name: partners_zh
-    label: Partner logos (中文)
-    type: file
-    path: content/cn/partners.json
-    fields:
-      - name: logos
-        label: Logos
-        type: object
-        list: true
-        fields:
-          - { name: name, label: Organisation name, type: string }
-          - name: image
-            label: Logo image
-            type: image
 
 
   - name: gallery_zh
-    label: Gallery photos (中文)
+    label: 图库照片 Gallery (中文)
     type: file
     path: content/cn/gallery.json
     fields:
       - name: photos
-        label: Photos
+        label: 照片
         type: object
         list: true
         fields:
           - name: image
-            label: Photo
+            label: 照片
             type: image
-          - { name: caption, label: Caption (optional), type: string }
+          - { name: caption, label: 说明文字（可选）, type: string }
 
 
   - name: team_zh
-    label: Team (中文)
+    label: 团队 Team (中文)
     type: file
     path: content/cn/team.json
     fields:
       - name: leadership
-        label: Leadership
+        label: 领导层
         type: object
         list: true
         fields:
           - name: photo
-            label: Photo (optional — leave empty to show initials)
+            label: 照片（可选 — 留空则显示缩写）
             type: image
-          - { name: mono, label: Initials (used if no photo), type: string }
-          - { name: name, label: Name, type: string }
-          - { name: role, label: Role / title, type: string }
-          - { name: bio, label: Short bio, type: text }
+          - { name: mono, label: 姓名缩写（无照片时显示）, type: string }
+          - { name: name, label: 姓名, type: string }
+          - { name: role, label: 职位, type: string }
+          - { name: bio, label: 简介, type: text }
       - name: analysts
-        label: Investment team (analysts)
+        label: 投资团队（分析师）
         type: object
         list: true
         fields:
           - name: photo
-            label: Photo (optional — leave empty to show initials)
+            label: 照片（可选 — 留空则显示缩写）
             type: image
-          - { name: mono, label: Initials (used if no photo), type: string }
-          - { name: name, label: Name, type: string }
-          - { name: tag, label: Sector focus, type: string }
+          - { name: mono, label: 姓名缩写（无照片时显示）, type: string }
+          - { name: name, label: 姓名, type: string }
+          - { name: tag, label: 专注行业, type: string }
 
 
   - name: news_zh
-    label: News (中文)
+    label: 动态 News (中文)
     type: file
     path: content/cn/news.json
     fields:
       - name: entries
-        label: News entries
+        label: 动态条目
         type: object
         list: true
         fields:
-          - { name: date, label: Date (e.g. Jul 2026), type: string }
-          - { name: cat, label: Category (e.g. Speaking), type: string }
+          - { name: date, label: 日期（如 2026 年 7 月）, type: string }
+          - { name: cat, label: 分类（如 演讲）, type: string }
           - { name: title, label: Headline, type: string }
-          - { name: excerpt, label: Summary, type: text }
-          - { name: href, label: Link (URL), type: string }
+          - { name: excerpt, label: 摘要, type: text }
+          - { name: href, label: 链接（网址）, type: string }
 
 
   - name: contact_zh
-    label: Contact page (中文)
+    label: 联系页 Contact (中文)
     type: file
     path: content/cn/contact.json
     fields:
-      - { name: eyebrow, label: Small heading, type: string }
-      - { name: heading, label: Page heading, type: string }
-      - { name: lede, label: Intro paragraph, type: text }
+      - { name: eyebrow, label: 小标题, type: string }
+      - { name: heading, label: 页面标题, type: string }
+      - { name: lede, label: 引言段落, type: text }
       - name: details
-        label: Contact details
+        label: 联系资料
         type: object
         list: true
         fields:
-          - { name: label, label: "Label (e.g. Email)", type: string }
-          - { name: value, label: Text shown, type: string }
+          - { name: label, label: "名称（如 电邮）", type: string }
+          - { name: value, label: 显示文字, type: string }
           - name: link
-            label: Link (optional — mailto:… or https://…)
+            label: 链接（可选 — mailto:… 或 https://…）
             type: string
-      - { name: formNote, label: Note under the form, type: text }
+      - { name: formNote, label: 表单下方说明, type: text }
       - name: topics
-        label: Enquiry types in the dropdown
+        label: 查询类型选项
         type: object
         list: true
         fields:
-          - { name: label, label: Option, type: string }
+          - { name: label, label: 选项, type: string }
 
 
   - name: site_zh
-    label: Other pages & footer (中文)
+    label: 其他页面与页脚 Other pages & footer (中文)
     type: file
     path: content/cn/site.json
     fields:
-      - { name: footerBlurb, label: Footer description, type: text }
-      - { name: footerCopyright, label: Footer copyright line, type: string }
-      - { name: footerLocation, label: Footer location, type: string }
+      - { name: footerBlurb, label: 页脚描述, type: text }
+      - { name: footerCopyright, label: 页脚版权文字, type: string }
+      - { name: footerLocation, label: 页脚地点, type: string }
 
       - name: teamPage
-        label: Team page wording
+        label: 团队页文字
         type: object
         fields:
-          - { name: eyebrow, label: Small heading, type: string }
-          - { name: heading, label: Page heading, type: string }
-          - { name: lede, label: Intro paragraph, type: text }
-          - { name: leadershipEyebrow, label: Leadership — small heading, type: string }
-          - { name: leadershipHeading, label: Leadership — heading, type: string }
-          - { name: analystsEyebrow, label: Analysts — small heading, type: string }
-          - { name: analystsHeading, label: Analysts — heading, type: string }
-          - { name: analystsLede, label: Analysts — intro, type: text }
-          - { name: ctaEyebrow, label: Closing — small heading, type: string }
-          - { name: ctaHeading, label: Closing — heading, type: string }
-          - { name: ctaText, label: Closing — text, type: text }
-          - { name: ctaLabel, label: Closing — link text, type: string }
+          - { name: eyebrow, label: 小标题, type: string }
+          - { name: heading, label: 页面标题, type: string }
+          - { name: lede, label: 引言段落, type: text }
+          - { name: leadershipEyebrow, label: 领导层 — 小标题, type: string }
+          - { name: leadershipHeading, label: 领导层 — 标题, type: string }
+          - { name: analystsEyebrow, label: 分析师 — 小标题, type: string }
+          - { name: analystsHeading, label: 分析师 — 标题, type: string }
+          - { name: analystsLede, label: 分析师 — 引言, type: text }
+          - { name: ctaEyebrow, label: 结尾 — 小标题, type: string }
+          - { name: ctaHeading, label: 结尾 — 标题, type: string }
+          - { name: ctaText, label: 结尾 — 文字, type: text }
+          - { name: ctaLabel, label: 结尾 — 链接文字, type: string }
 
       - name: newsPage
-        label: News page wording
+        label: 动态页文字
         type: object
         fields:
-          - { name: eyebrow, label: Small heading, type: string }
-          - { name: heading, label: Page heading, type: string }
-          - { name: lede, label: Intro paragraph, type: text }
-          - { name: buttonLabel, label: Button text, type: string }
-          - { name: buttonLink, label: Button link, type: string }
+          - { name: eyebrow, label: 小标题, type: string }
+          - { name: heading, label: 页面标题, type: string }
+          - { name: lede, label: 引言段落, type: text }
+          - { name: buttonLabel, label: 按钮文字, type: string }
+          - { name: buttonLink, label: 按钮链接, type: string }
 
       - name: galleryPage
-        label: Gallery page wording
+        label: 图库页文字
         type: object
         fields:
-          - { name: eyebrow, label: Small heading, type: string }
-          - { name: heading, label: Page heading, type: string }
-          - { name: lede, label: Intro paragraph, type: text }
+          - { name: eyebrow, label: 小标题, type: string }
+          - { name: heading, label: 页面标题, type: string }
+          - { name: lede, label: 引言段落, type: text }

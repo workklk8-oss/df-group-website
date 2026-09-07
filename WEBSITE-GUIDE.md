@@ -131,24 +131,19 @@ change the Chinese, and vice versa.
 
 **Structure syncs automatically.** If you add, remove, or reorder a team
 member, photo, news item or practice in **English**, the Chinese version is
-updated to match the next time the site builds. Photos, links and dates always
-follow English, so the two pages can never fall out of step.
+updated to match on the next build. Photos, links and dates always follow
+English, so the two pages can never fall out of step.
 
-**The words translate themselves too.** When you change English text, the
-Chinese is re-translated automatically on the next build (using DeepL). You do
-not have to type Chinese at all.
+**You type the Chinese yourself.** In the editor, each Chinese section is
+labelled in Chinese — 首页, 团队, 动态, 图库, 联系页 — and works exactly like the
+English one. Nothing is machine-translated, so the wording is always yours.
 
-**Two things worth knowing:**
+**After adding something in English**, open the matching Chinese section and
+write the Chinese. A newly added item shows the English text until you do, so
+the page is never blank or broken in the meantime.
 
-1. **It is machine translation.** Please have a Chinese speaker read anything
-   important before relying on it, especially wording about services.
-2. **Hand-written Chinese is kept** — if you correct the Chinese yourself, your
-   version stays, unless the English for that same text is later changed.
-
-**Protecting wording that must not change.** Some phrases are approved and
-should never be silently re-translated. Those are listed in
-`content/cn/.no-translate.json`, and the translator skips them. A developer can
-add to that list.
+**Partner logos are shared.** They are images only, so they appear once (in
+English) and are used on both versions automatically.
 
 ---
 
