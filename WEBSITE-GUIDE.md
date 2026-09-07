@@ -134,9 +134,10 @@ member, photo, news item or practice in **English**, the Chinese version is
 updated to match on the next build. Photos, links and dates always follow
 English, so the two pages can never fall out of step.
 
-**You type the Chinese yourself.** In the editor, each Chinese section is
-labelled in Chinese — 首页, 团队, 动态, 图库, 联系页 — and works exactly like the
-English one. Nothing is machine-translated, so the wording is always yours.
+**You type the Chinese yourself.** In the editor each section appears twice —
+once marked **(English)** and once marked **(Chinese)** — with the same fields
+in the same order. Nothing is machine-translated, so the wording is always
+yours.
 
 **After adding something in English**, open the matching Chinese section and
 write the Chinese. A newly added item shows the English text until you do, so
