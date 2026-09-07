@@ -7,9 +7,18 @@
     "secondaryLabel": "展开对话"
   },
   "stats": [
-    { "value": "100+", "label": "网络顾问人数" },
-    { "value": "亚洲—全球", "label": "跨境视野" },
-    { "value": "耐心", "label": "资本与信念" }
+    {
+      "value": "100+",
+      "label": "网络顾问人数"
+    },
+    {
+      "value": "Asia–Global",
+      "label": "跨境视野"
+    },
+    {
+      "value": "Patient",
+      "label": "资本与信念"
+    }
   ],
   "trustedByEyebrow": "创办人与伙伴的信赖",
   "intro": {

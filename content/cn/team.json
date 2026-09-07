@@ -1,7 +1,7 @@
 {
   "leadership": [
     {
-      "mono": "K",
+      "mono": "KK",
       "name": "Kenneth Kwong, CFA",
       "role": "创办人兼行政总裁",
       "bio": "拥有数十年银行家、投资者与企业家经验，曾于欧洲及亚洲的银行、证券公司、地产公司、创投基金、学术组织与家族办公室担任高级职务。INSEAD 工商管理硕士；香港城市大学、北京大学及华威商学院校友。"
@@ -44,13 +44,40 @@
     }
   ],
   "analysts": [
-    { "mono": "P", "name": "Poon", "tag": "医疗科技" },
-    { "mono": "L", "name": "Luna", "tag": "工程与机器人技术" },
-    { "mono": "S", "name": "Saruni S.", "tag": "软件 · 区块链 · 金融科技" },
-    { "mono": "N", "name": "Non", "tag": "农业 · 生物燃料 · 新材料" },
-    { "mono": "CC", "name": "Chin Chin", "tag": "人工智能与半导体" },
-    { "mono": "BS", "name": "Bryan Sie", "tag": "金融科技 · 人工智能 · 深科技" },
-    { "mono": "A", "name": "Angelo", "tag": "医疗科技 · 金融科技" },
-    { "mono": "V", "name": "Vincent", "tag": "医疗科技" }
+    {
+      "mono": "P",
+      "name": "Poon",
+      "tag": "医疗科技"
+    },
+    {
+      "mono": "L",
+      "name": "Luna",
+      "tag": "工程与机器人技术"
+    },
+    {
+      "mono": "S",
+      "name": "Saruni S.",
+      "tag": "软件 · 区块链 · 金融科技"
+    },
+    {
+      "mono": "N",
+      "name": "Non",
+      "tag": "农业 · 生物燃料 · 新材料"
+    },
+    {
+      "mono": "CC",
+      "name": "Chin Chin",
+      "tag": "人工智能与半导体"
+    },
+    {
+      "mono": "A",
+      "name": "Angelo",
+      "tag": "医疗科技 · 金融科技"
+    },
+    {
+      "mono": "V",
+      "name": "Vincent",
+      "tag": "医疗科技"
+    }
   ]
 }

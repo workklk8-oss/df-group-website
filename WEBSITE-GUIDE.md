@@ -129,8 +129,19 @@ In the editor every section appears **twice**: once marked **(English)** and
 once marked **(中文)**. They are separate — editing the English text does not
 change the Chinese, and vice versa.
 
-**If you change something in English, remember to change the Chinese too**,
-otherwise the two versions drift apart.
+**Structure syncs automatically.** If you add, remove, or reorder a team
+member, photo, news item or practice in **English**, the Chinese version is
+updated to match the next time the site builds. Photos, links and dates always
+follow English, so the two pages can never fall out of step.
+
+**The words do not translate themselves.** A newly added item appears on the
+Chinese page showing the English text until someone types the Chinese. So after
+adding something in English, open the matching **(中文)** section and translate
+the new text.
+
+**Editing existing English wording does not change the Chinese.** If you reword
+the homepage in English, update the Chinese homepage too, or the two versions
+will say different things.
 
 ---
 
